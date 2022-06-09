@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78C92734-61F0-429B-B816-23706C1AC5B9}</ProjectGuid>
+    <RootNamespace>Seekers</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../Run-x64/</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../Run-x64-Release/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\halcon;include\halcon\halconcpp;include;include\Widgets</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib/x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DHGrabberForDS.lib;DHGrabberForSG.lib;DHGrabberForMER.lib;DHGrabberForAVT.lib;halconcpp.lib;PIO24B_DLL.lib;FindMark.lib;SeekersAlgorithm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Run-x86/Seekers.exe</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\COMInclude\Widgets;..\COMInclude;..\COMInclude\SCIInterFace;../COMInclude\halcon\halconcpp;../COMInclude\halcon;include/ChartCtrl;include/ColourPicker</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../COMLib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>halconxl.lib;halconcppxl.lib;DHWidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../Run-x64/Seekers.exe</OutputFile>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\COMInclude\Widgets;..\COMInclude;..\COMInclude\SCIInterFace;../COMInclude\halcon\halconcpp;../COMInclude\halcon</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>E:\Run-x64-Release/Seekers.exe</OutputFile>
+      <AdditionalLibraryDirectories>../COMLib/x64-Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>halconcpp.lib;DHWidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\SCIStorage\SCIStorage.vcxproj.filters" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\b_database.ico" />
+    <None Include="res\b_flag1.ico" />
+    <None Include="res\b_flag2.ico" />
+    <None Include="res\b_folder.ico" />
+    <None Include="res\DrawModel.ico" />
+    <None Include="res\fileadd.ico" />
+    <None Include="res\gray_light.ico" />
+    <None Include="res\green_light.ico" />
+    <None Include="res\icon4.ico" />
+    <None Include="res\image.ico" />
+    <None Include="res\key.ico" />
+    <None Include="res\layer.ico" />
+    <None Include="res\leave.ico" />
+    <None Include="res\left.ico" />
+    <None Include="res\line.ico" />
+    <None Include="res\lock.ico" />
+    <None Include="res\logo.bmp" />
+    <None Include="res\pause.ico" />
+    <None Include="res\play.ico" />
+    <None Include="res\Ready.ico" />
+    <None Include="res\red_light.ico" />
+    <None Include="res\refresh.ico" />
+    <None Include="res\right.ico" />
+    <None Include="res\s-white.ico" />
+    <None Include="res\Seekers.ico" />
+    <None Include="res\Seekers.rc2" />
+    <None Include="res\set.ico" />
+    <None Include="res\w_123.ico" />
+    <None Include="res\w_check.ico" />
+    <None Include="res\w_clear.ico" />
+    <None Include="res\w_detect.ico" />
+    <None Include="res\w_list.ico" />
+    <None Include="res\w_live.ico" />
+    <None Include="res\w_map.ico" />
+    <None Include="res\w_paper.ico" />
+    <None Include="res\w_save.ico" />
+    <None Include="res\w_select.ico" />
+    <None Include="res\w_set.ico" />
+    <None Include="res\w_uncheck.ico" />
+    <None Include="res\ZoomIn.cur" />
+    <None Include="res\ZoomOut.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADOConnect.h" />
+    <ClInclude Include="AutoGRR.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CRange.h" />
+    <ClInclude Include="CShapes.h" />
+    <ClInclude Include="CWorkbook.h" />
+    <ClInclude Include="CWorkbooks.h" />
+    <ClInclude Include="CWorksheet.h" />
+    <ClInclude Include="CWorksheets.h" />
+    <ClInclude Include="DlgCalibResolution.h" />
+    <ClInclude Include="DlgCreateBaseLine.h" />
+    <ClInclude Include="DlgDailyButton.h" />
+    <ClInclude Include="DlgDatabaseHistory.h" />
+    <ClInclude Include="DlgFinalOutResult.h" />
+    <ClInclude Include="DlgHelp.h" />
+    <ClInclude Include="DlgHistory.h" />
+    <ClInclude Include="DlgInput.h" />
+    <ClInclude Include="DlgLineChart.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgNewProductName.h" />
+    <ClInclude Include="DlgPopError.h" />
+    <ClInclude Include="DlgProductManager.h" />
+    <ClInclude Include="DlgProductParam.h" />
+    <ClInclude Include="DlgRegister.h" />
+    <ClInclude Include="DlgScatterPlot.h" />
+    <ClInclude Include="DlgShowSizeResult.h" />
+    <ClInclude Include="DlgStandardSetting.h" />
+    <ClInclude Include="DlgStandardSurfaceSetting.h" />
+    <ClInclude Include="DlgStartUp.h" />
+    <ClInclude Include="DlgSwitchBatch.h" />
+    <ClInclude Include="DlgSystemSet.h" />
+    <ClInclude Include="DlgTabSizeSet.h" />
+    <ClInclude Include="DlgTcpConnect.h" />
+    <ClInclude Include="FastMemcpy.h" />
+    <ClInclude Include="FinsTCPExt.h" />
+    <ClInclude Include="GlobalVariables.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartAxis.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartCandlestickSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartCursor.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartFont.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartGanttSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartGradient.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartGrid.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartLabel.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartLegend.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartSerieBase.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartSeriesMouseListener.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartString.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartTitle.h" />
+    <ClInclude Include="Include\ChartCtrl\ChartXYSerie.h" />
+    <ClInclude Include="Include\ChartCtrl\PointsOrdering.h" />
+    <ClInclude Include="Include\ColourPicker\ColourPopup.h" />
+    <ClInclude Include="Include\Define.h" />
+    <ClInclude Include="InkjetProcess.h" />
+    <ClInclude Include="Judge.h" />
+    <ClInclude Include="OScopeCtrl.h" />
+    <ClInclude Include="PageBaseLine.h" />
+    <ClInclude Include="PageGRRSet.h" />
+    <ClInclude Include="PageSpotDetectSet.h" />
+    <ClInclude Include="PowerLimit.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Seekers.h" />
+    <ClInclude Include="SeekersDlg.h" />
+    <ClInclude Include="SpotSizeCheck.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubDlgControl.h" />
+    <ClInclude Include="SubDlgCount.h" />
+    <ClInclude Include="SubDlgSize.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadOperations.h" />
+    <ClInclude Include="Upload.h" />
+    <ClInclude Include="XmvImageWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\COMInclude\DH_HalconEx.cpp" />
+    <ClCompile Include="ADOConnect.cpp" />
+    <ClCompile Include="AutoGRR.cpp" />
+    <ClCompile Include="DlgCalibResolution.cpp" />
+    <ClCompile Include="DlgCreateBaseLine.cpp" />
+    <ClCompile Include="DlgDailyButton.cpp" />
+    <ClCompile Include="DlgDatabaseHistory.cpp" />
+    <ClCompile Include="DlgFinalOutResult.cpp" />
+    <ClCompile Include="DlgHelp.cpp" />
+    <ClCompile Include="DlgHistory.cpp" />
+    <ClCompile Include="DlgInput.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgNewProductName.cpp" />
+    <ClCompile Include="DlgPopError.cpp" />
+    <ClCompile Include="DlgProductManager.cpp" />
+    <ClCompile Include="DlgProductParam.cpp" />
+    <ClCompile Include="DlgRegister.cpp" />
+    <ClCompile Include="DlgScatterPlot.cpp" />
+    <ClCompile Include="DlgStandardSetting.cpp" />
+    <ClCompile Include="DlgStandardSurfaceSetting.cpp" />
+    <ClCompile Include="DlgStartUp.cpp" />
+    <ClCompile Include="DlgSwitchBatch.cpp" />
+    <ClCompile Include="DlgSystemSet.cpp" />
+    <ClCompile Include="DlgTabSizeSet.cpp" />
+    <ClCompile Include="DlgTcpConnect.cpp" />
+    <ClCompile Include="FastMemcpy.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="FinsTCPExt.cpp" />
+    <ClCompile Include="GlobalVariables.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartGanttSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="Include\ChartCtrl\ChartXYSerie.cpp" />
+    <ClCompile Include="Include\ColourPicker\ColourPicker.cpp" />
+    <ClCompile Include="Include\ColourPicker\ColourPopup.cpp" />
+    <ClCompile Include="InkjetProcess.cpp" />
+    <ClCompile Include="Judge.cpp" />
+    <ClCompile Include="OScopeCtrl.cpp" />
+    <ClCompile Include="PageBaseLine.cpp" />
+    <ClCompile Include="PageGRRSet.cpp" />
+    <ClCompile Include="PageSpotDetectSet.cpp" />
+    <ClCompile Include="PowerLimit.cpp" />
+    <ClCompile Include="Seekers.cpp" />
+    <ClCompile Include="SeekersDlg.cpp" />
+    <ClCompile Include="SpotSizeCheck.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubDlgControl.cpp" />
+    <ClCompile Include="SubDlgCount.cpp" />
+    <ClCompile Include="SubDlgSize.cpp" />
+    <ClCompile Include="ThreadOperations.cpp" />
+    <ClCompile Include="Upload.cpp" />
+    <ClCompile Include="XmvImageWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Seekers.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Seekers.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="SCIDetect.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\SCIDetect.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Test.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Cancel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\AdvanceSetting.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Mark.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Loop.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Defect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Save.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CheckParam.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Blue\Calc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Save.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Size.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DrawModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DefectControl.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SaveImage.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\新建文件夹\Close.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\layer.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\w_uncheck.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="ClassDiagram6.cd" />
+    <None Include="res\ZoomIn.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ZoomOut.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\..\..\A项目筹备\一出四\更改缺陷类型-0827\Seekers - 1-10版本一出四\SCIDetect\res\ZoomIn.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SCIDetect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DHInterFace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHalconEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\COMInclude\DH_HalconEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Battery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XmvImageWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgHelp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LineToolPara.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Detect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageGRRSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageLineSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MLPDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCalibrate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SCIDetect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DHInterFace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHalconEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Battery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XmvImageWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgHelp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LineToolPara.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Detect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageGRRSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageLineSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MLPDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCalibrate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SCIDetect.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

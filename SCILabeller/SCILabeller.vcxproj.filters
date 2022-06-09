@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="SCILabeller.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\SCILabeller.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\leave.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\w_detect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\w_save.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\w_select.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\b_folder.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\b_flag2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\b_flag1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\b_database.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\w_check.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\w_uncheck.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\red_light.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\green_light.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SCILabeller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\COMInclude\DH_HalconEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Labeller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FinsTCPExt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLabelInfoDisp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageCount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSystemParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageControlParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageWarn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SCILabeller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Labeller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FinsTCPExt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLabelInfoDisp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageCount.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSystemParam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageControlParam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageWarn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SCILabeller.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
